@@ -4,7 +4,7 @@ $(function () {
 		var cmps = $('#' + self.attr('name') + '_components');
 		var fmtd = $('input[name="' + self.attr('name') + '_formatted"]');
 		self.geocomplete({
-			country='KE',
+			country:'KE',
 			details: cmps,
 			detailsAttribute: 'data-geo'
 		}).change(function () {
