@@ -203,6 +203,11 @@
         this.autocomplete.bindTo('bounds', this.map);
       }
 
+      this.autocomplete.setComponentRestrictions({
+        country: ['ke',],
+      });
+    
+
       // Watch `place_changed` events on the autocomplete input field.
       google.maps.event.addListener(
         this.autocomplete,
